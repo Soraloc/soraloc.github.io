@@ -1,13 +1,16 @@
-#haut1
+#boite
 {
     display: flex;
     flex-direction: row;
 }
 
-#haut2
+#boitetexte
 {
-    display: flex;
-    width: 550px;
-    flex-direction: row;
-    margin-left: 155px;
+    width: 850px;
+    margin-left: 20px;
+}
+
+#titre
+{
+    margin-top: 35px;
 }
