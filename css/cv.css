@@ -37,6 +37,7 @@ body
 }
 #cv-intro h1
 {
+    width: 97%;
     margin: 0;
     padding: 0;
     font-size: 2.4em;
@@ -46,7 +47,7 @@ body
 
 #cv-intro h1 span
 {
-    color: rgb(226,0,26);
+    color: rgb(3,186,252);
 }
 
 #cv-intro::after
@@ -69,7 +70,7 @@ body
 
 .rubrique h2
 {
-    color: rgb(226,0,26);
+    color: rgb(3,186,252);
 }
 
 .rubrique h2::before
@@ -273,6 +274,30 @@ body
     padding-top: 3px;
 }
 
+@media (min-width: 500px)
+{
+    #langues .container
+    {
+      flex-direction: column;  
+    }
+}
+
+@media (min-width: 768px)
+{
+    #langues .container
+    {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px)
+{
+    #langues .container
+    {
+        flex-direction: row;
+    }
+}
+
 /******************************************
 * Compétences
 ******************************************/
@@ -288,12 +313,12 @@ body
     font-size: 1.3em;
 }
 
-#competences .container .classement
+/*#competences .container .classement
 {
  background: scroll transparent url(images/Red-Rating-Stars.png) no-repeat;
  width: 160px;
  height: 27px;
-}
+}*/
 
 #competences .container .classement0
 {
@@ -323,7 +348,52 @@ body
 #competences .container .classement5
 {
     background-position: 0 0px;
-} 
+}
+
+/******************************************
+* Passions
+******************************************/
+#passions .container
+{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+#passions .container .libelle
+{
+    font-size: 1.3em;
+}
+
+#passions .container .classement0
+{
+    background-position: 0 -142px;
+}
+
+#passions .container .classement1
+{
+    background-position: 0 -112px;
+}
+
+#passions .container .classement2
+{
+    background-position: 0 -84px;
+}
+
+#passions .container .classement3
+{
+    background-position: 0 -56px;
+}
+
+#passions .container .classement4
+{
+    background-position: 0 -28px;
+}
+
+#passions .container .classement5
+{
+    background-position: 0 0px;
+}
 
 /******************************************
 * Me contacter
